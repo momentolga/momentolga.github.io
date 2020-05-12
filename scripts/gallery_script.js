@@ -2,7 +2,7 @@
 
 $(".img-wrapper").hover(
   function () {
-    $(this).find(".img-overlay").animate({ opacity: 1 }, 600);
+    $(this).find(".img-overlay").animate({ opacity: 0.6 }, 600);
   }, function () {
     $(this).find(".img-overlay").animate({ opacity: 0 }, 600);
   }
@@ -11,9 +11,9 @@ $(".img-wrapper").hover(
 // Lightbox
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
-var $prevButton = $('<div id="prevButton"><i class="fa fa-chevron-left"></i></div>');
-var $nextButton = $('<div id="nextButton"><i class="fa fa-chevron-right"></i></div>');
-var $exitButton = $('<div id="exitButton"><i class="fa fa-times"></i></div>');
+var $prevButton = $('<div id="prevButton"><i class="fas fa-chevron-left"></i></div>');
+var $nextButton = $('<div id="nextButton"><i class="fas fa-chevron-right"></i></div>');
+var $exitButton = $('<div id="exitButton"><i class="fas fa-times"></i></div>');
 
 // Add overlay
 $overlay.append($image).prepend($prevButton).append($nextButton).append($exitButton);
