@@ -1,0 +1,100 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-size: 40px;
+}
+
+h4 {
+  color: rgb(255, 153, 153);
+}
+
+h6 {
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+h6 a {
+  color:rgb(255, 153, 153)
+}
+
+h6 a:hover {
+  color: rgb(195, 64, 64)
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+
+.navbar-brand {
+  max-width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-brand {
+    width: 200px;
+  }
+}
+
+#navigation {
+  color:rgb(105, 105, 105);
+}
+
+#navigation:hover, #author {
+  color: rgb(255, 153, 153);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#category {
+  max-width: 400px;
+  height: 400px;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+#category:hover {
+  opacity: 1;
+}
+
+.jumbotron {
+  background-color:rgba(255, 153, 153, 0.2);
+  padding: 20px 20px;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logos img {
+  max-width: 35px;
+  margin: 10px;
+}
+
+.card img, .card {
+  border-radius: 20px;
+}
